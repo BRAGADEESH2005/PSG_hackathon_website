@@ -9,12 +9,12 @@ body{
     margin: 0;
     padding: 0;
 }
-.container {
+.container_fq {
     max-width: 800px;
     margin: 2rem auto;
     border-radius: 10px;
 }
-.container h1{
+.container_fq h1{
 
     text-align: center;
     align-items: center;
