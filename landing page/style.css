@@ -59,7 +59,8 @@ nav > .nav-header > .nav-title {
 }
 
 nav > .nav-links {
-  display: inline;
+  display: flex;
+  align-items: center;
   float: right;
   font-size: 18px;
 }
@@ -142,7 +143,7 @@ nav > #nav-check {
 
 /* Styles for the sponsor container */
 .sponsor-container {
-  background: linear-gradient(to bottom, #ccc, #fff); /* Gray background color */
+  background: #6b9fa2;; /* Gray background color */
   padding: 20px; /* Add padding for spacing */
   text-align: center;
   border-radius: 10px;
@@ -349,7 +350,7 @@ nav > #nav-check {
   place-items: center;
   margin: 0;
   border: 0;
-  /* height: 800px; */
+  height: 80vh;
 }
 
 
@@ -420,7 +421,7 @@ nav > #nav-check {
 
 
 .ui-btn {
-  --btn-default-bg: rgb(41, 41, 41);
+  --btn-default-bg: #6b9fa2;
   --btn-padding: 15px 20px;
   --btn-hover-bg: rgb(51, 51, 51);
   --btn-transition: .3s;
@@ -876,6 +877,7 @@ nav > #nav-check {
   border-top-right-radius: 5px;
   background: #212121;
   justify-content: space-between;
+  opacity: 0.4;
 }
 
 .butt {
@@ -940,6 +942,7 @@ nav > #nav-check {
   font-size: 12px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  opacity: 0.4;
 }
 
 .terminal_promt {
@@ -1473,6 +1476,11 @@ button{
 
 
 } 
+
+.aboutus div{
+  background-color: #6b9fa2;
+  color: #FFFF;
+}
 
 .copyrights{
   font-family: sans-serif;
