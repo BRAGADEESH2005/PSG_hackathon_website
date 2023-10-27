@@ -86,6 +86,10 @@ nav > #nav-check {
 
 @media screen and (max-width: 970px) {
 
+  .dropdown-content > ul > li > a {
+    text-decoration: none;
+    color: white;
+  }
   .mobile-logo{
     height: 40px;
     display: flex;
