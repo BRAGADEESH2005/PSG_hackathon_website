@@ -79,18 +79,37 @@ nav > #nav-check {
   display: none;
 }
 
+.mobile-logo{
+  display: none;
+}
 
 @media screen and (max-width: 970px) {
 
   .mobile-logo{
+    height: 40px;
+    display: flex;
     justify-content: flex-end;
     color: #fff;
+    margin-left: auto;
+  }
+
+  .mobile-logo > p {
+        font-size: 20px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0);
+    text-align: center;
+    /* font-weight: bold; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+  
   }
   .moving-text {
     display: none;
   }
   nav {
-    display: block; /* Change to a block layout for mobile */
+    display: flex; /* Change to a block layout for mobile */
+    justify-content: space-between;
+    flex-direction: row-reverse;
     background-color: #4d4d4d;
     position: relative;
     padding: 20px 20px 10px;
@@ -1426,9 +1445,7 @@ button{
     overflow:auto;
 }
 
-.mobile-logo{
-  display: none;
-}
+
 
 @media screen and (max-width: 900px) {
 /* code for mobile responsive */
