@@ -583,7 +583,7 @@ div{
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         border-bottom: 3px solid white;
         position: relative;
     }
@@ -599,14 +599,14 @@ div{
     }
     .logo{
         align-self: flex-start;
-        margin: 10px 0 0 30px;
+        margin: 10px 0 0 10px;
     }
 
     .menu{
         display: block;
         position: absolute;
-        right: 20px;
-        top: 25px;
+        right: 10px;
+        top: 30px;
     }
 
     .showmenu {
@@ -634,10 +634,9 @@ div{
         margin: auto 20px;
     }
 
-        .body{
-        padding-top: 0 ;
-        padding-left: 0;
-        padding-right: 0;
-    
+    body{
+        padding-top:0 ;
+        padding-left:0;
+        padding-right:0;
     }
 }
