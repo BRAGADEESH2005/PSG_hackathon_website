@@ -634,7 +634,10 @@ div{
         margin: auto 20px;
     }
 
-    .body{
-        padding: 0;
+        .body{
+        padding-top: 0 ;
+        padding-left: 0;
+        padding-right: 0;
+    
     }
 }
