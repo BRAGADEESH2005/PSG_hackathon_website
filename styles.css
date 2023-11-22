@@ -51,8 +51,8 @@ nav .logo a:hover{
 
 .to-top{
     background-color: white;
-     height:50px; 
-     width:50px;
+     height:30px; 
+     width:30px;
      right: 32px;
      bottom: 16px;
      border-radius: 50%;
@@ -196,6 +196,8 @@ nav .logo a:hover{
     transition: var(--btn-transition);
     overflow: hidden;
     box-shadow: var(--btn-shadow);
+    
+    animation-fill-mode: forwards;
   }
 
   
@@ -225,6 +227,7 @@ nav .logo a:hover{
   .ui-btn:hover span::before, .ui-btn:focus span::before {
     animation: chitchat linear both var(--btn-animation-duration);
   }
+  
   @keyframes chitchat {
     0% {
       content: "#";
@@ -320,6 +323,111 @@ nav .logo a:hover{
     }
   }
 
+  .flip-bd {
+    color: white;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flipcard1,
+  .flipcard2,
+  .flipcard3,
+  .flipcard4 {
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  .flip_card1,
+  .flip_card2,
+  .flip_card3,
+  .flip_card4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 1800ms;
+    transform-style: preserve-3d;
+  }
+  
+  .flipcard1:hover > .flip_card1,
+  .flipcard2:hover > .flip_card2,
+  .flipcard3:hover > .flip_card3,
+  .flipcard4:hover > .flip_card4 {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .flip_front1,
+  .flip_back1,
+  .flip_front2,
+  .flip_back2,
+  .flip_front3,
+  .flip_back3,
+  .flip_front4,
+  .flip_back4 {
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border: 2px solid smooth;
+    border-radius: 40px;
+    border-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flip_front1,
+  .flip_front2,
+  .flip_front3,
+  .flip_front4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    perspective: 100px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCoflC6Cj2wpbcKy9X-TnxXk9KTP2sCHzdfA&usqp=CAU");
+    mask-image: radial-gradient(circle at center, transparent 75%, black 100%);
+    background-size: 100% 65%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #656c6d;
+  }
+  
+  .flip_text {
+    position: absolute;
+    top: 60px;
+    padding-top: 60%;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .flip_back1,
+  .flip_back2,
+  .flip_back3,
+  .flip_back4 {
+    height: 100%;
+    color: white;
+    background-color: #656c6d;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .flip_pre {
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 20px;
+  }
 
 
 .schedule{
@@ -449,7 +557,7 @@ div{
 }
 
 .single-faq:hover h5 {
-    color: #FAC921; /* Some transition color */
+    color: #B9A8A8; /* Some transition color */
 }
 
 .sponsor-container {
@@ -505,7 +613,7 @@ div{
 
   .sponsor a:hover{
     text-decoration: underline;
-    color: #FAC921;
+    color: #B9A8A8;
     text-underline-offset: 10px;
   }
 
@@ -718,5 +826,8 @@ div{
         padding-top:0 ;
         padding-left:0;
         padding-right:0;
+    }
+    .flip-bd{
+      flex-direction: column;
     }
 }

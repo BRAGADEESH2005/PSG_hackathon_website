@@ -735,4 +735,8 @@ footer{
       align-items: center;
       margin: auto 20px;
   }
+
+  .flip-bd{
+    flex-direction: column;
+  }
 }
