@@ -239,6 +239,7 @@ nav .logo a:hover{
     margin-left: 2%;
     margin-bottom: 10%;
     position: fixed;
+    opacity: .6;
     animation: scaleRotate 1.5s ease-out forwards;
   }
   
@@ -248,7 +249,7 @@ nav .logo a:hover{
       transform: scale(0.8) rotate(45deg);
     }
     to {
-      opacity: 0.3;
+      opacity: .6;
       transform: scale(1) rotate(0deg);
     }
   }
@@ -872,6 +873,7 @@ div{
     width:80%;
     height: 40%;
     margin-top: 10%;
+    opacity: 2;
    }
     .menu{
         display: block;
