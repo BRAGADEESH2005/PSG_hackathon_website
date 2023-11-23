@@ -84,6 +84,29 @@ nav .logo a:hover{
     border-radius: 10px;
 } */
 
+.moving-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+  margin-left: 2%;
+  width: 230px;
+  overflow: hidden;
+}
+
+.moving-text > p {
+  margin: 0;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0);
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
 .menu-line {
   height: 4px;
   width: 25px;
@@ -112,28 +135,124 @@ nav .logo a:hover{
     cursor: pointer;
     display: none;
 }
-
 .hero-title {
-    font-size: 10rem;
-    text-align: center;
-    background: linear-gradient(45deg, #FBF8CC, #FDE4CF, #FFCFD2, #F1C0E8, #CFBAF0, #A3C4F3, #90DBF4, #8EECF5, #98F5E1, #B9FBC0);
-    -webkit-background-clip: text;
-    color: transparent;
-    background-size: 200% 200%;
-    animation: gradientAnimation 8s linear infinite; /* Adjust the animation duration */
-    margin-bottom: 0;
-    padding: 0;
+  font-size: 7rem;
+  text-align: center;
+  background: linear-gradient(45deg, #FBF8CC, #FDE4CF, #FFCFD2, #F1C0E8, #CFBAF0, #A3C4F3, #90DBF4, #8EECF5, #98F5E1, #B9FBC0);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% 200%;
+  animation: gradientAnimation 8s linear infinite, colorAnimation 0.3s ease-out, textShadowAnimation 0.3s ease-out;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.hero-title:hover {
+  color: #555; /* Change to the desired text color on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow on hover */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes colorAnimation {
+  to {
+    color: #555; /* Change to the desired text color on hover */
+  }
+}
+
+@keyframes textShadowAnimation {
+  to {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow on hover */
+  }
+}
+
+
+
 
   .hero{
-    padding-top: 200px;
-    padding-bottom: 140px;
+   
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     
   }
 
+  .main_hero{
+    height: 100vh;
+    padding-top: 10%;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main_hero .code-design3 {
+    height: 90%;
+    width: 90%;
+    z-index: -1;
+    opacity: 0.5;
+    transform: scale(0.9);
+    animation: fadeInScale 1.5s ease-out forwards;
+   
+   
+  }
+  
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .main_hero .code-design3:hover {
+    animation: hoverAnimation 0.8s ease-out forwards;
+  }
+  
+  @keyframes hoverAnimation {
+    0% {
+      opacity: 0.5;
+      transform: scale(0.9) rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2) rotate(180deg);
+    }
+    100% {
+      opacity: 0.8;
+      transform: scale(1) rotate(360deg);
+    }
+  }
+  .group-img1 {
+    z-index: -1;
+    height: 50%;
+    width: 30%;
+    margin-left: 2%;
+    margin-bottom: 10%;
+    position: fixed;
+    animation: scaleRotate 1.5s ease-out forwards;
+  }
+  
+  @keyframes scaleRotate {
+    from {
+      opacity: 0;
+      transform: scale(0.8) rotate(45deg);
+    }
+    to {
+      opacity: 0.3;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  
 
   .hero-sub {
     font-size: 1.5rem;
@@ -150,7 +269,7 @@ nav .logo a:hover{
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space:  nowrap;
     overflow: hidden;
-    border-right: 3px solid white;
+   
     font-family: monospace;
     font-size: 2em;
   }
@@ -330,6 +449,7 @@ nav .logo a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+  
   }
   
   .flipcard1,
@@ -714,6 +834,10 @@ div{
   .mobile-content{
     display: none;
   }
+  .register{
+    margin-left:40% ;
+  }
+ 
 
  @media all and (max-width:875px) {
     nav{
@@ -741,8 +865,15 @@ div{
         margin: 10px 0 0 10px;
     }
 
-    
-
+    .code-design3{
+      display: none;
+    }
+   .group-img1{
+    width:80%;
+    height: 40%;
+    margin-top: 10%;
+    opacity: 2;
+   }
     .menu{
         display: block;
         position: absolute;
@@ -767,7 +898,7 @@ div{
        padding-right: 3%;
     }
     .typing{
-      width: 10ch;
+      width: 20ch;
       font-size: 1.5rem;
     }
 
