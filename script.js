@@ -1,17 +1,3 @@
-// let menu= document.querySelector(".menu");
-// let unorderList = document.querySelector('nav ul');
-// menu.addEventListener('click',()=>{
-//     unorderList.classList.toggle('showmenu')
-// })
-
-// const toTop=document.querySelector(".to-top");
-// window.addEventListener("scroll",()=>{
-//     if(window.pageYOffset > 100){
-//         toTop.classList.add("active");
-//     }else{
-//         toTop.classList.remove("active");
-//     }
-// })
 let menu = document.querySelector(".menu");
 let unorderList = document.querySelector("nav ul");
 let menuLines = document.querySelectorAll(".menu-line");
@@ -74,6 +60,8 @@ document.addEventListener("mousemove", (e) => {
 const checkbox = document.getElementById("checkbox");
 const dropdown = document.querySelector(".dropdown");
 
-checkbox.addEventListener("click", function () {
-	dropdown.classList.toggle("active");
-});
+if (checkbox != null) {
+	checkbox.addEventListener("click", function () {
+		dropdown.classList.toggle("active");
+	});
+}
