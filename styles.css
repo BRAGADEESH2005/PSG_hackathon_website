@@ -1167,6 +1167,7 @@ header h1:hover{
     position: relative;
     background-color: #2d8dc4; /* Darker background color for the event cards */
     color: #fff; /* White text color */
+    margin-bottom: 3%;
   }
   
   .event:hover {
@@ -1482,6 +1483,7 @@ div{
 
     }
 
+
     .hero{
        height: 100vh;
        padding-top: 30%;
@@ -1553,5 +1555,8 @@ div{
     }
     .flip-bd{
       flex-direction: column;
+    }
+    .socialContainer{
+      justify-content: space-evenly;
     }
 }
