@@ -405,7 +405,11 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
-.div1 { grid-area: 2 / 1 / 3 / 6; }
+.div1 { grid-area: 2 / 1 / 3 / 6; 
+  display: flex;
+  /* make elements sentered vertically */
+  align-items:end;
+}
 .div2 { grid-area: 3 / 1 / 6 / 3; 
 padding-left: 15%;}
 .div3 { grid-area: 4 / 3 / 5 / 4; }
