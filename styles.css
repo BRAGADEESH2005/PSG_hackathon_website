@@ -1413,8 +1413,9 @@ footer{
 .mobile-content{
   display: none;
 }
+
 .register{
-  margin-left:40% ;
+  margin-left:35% ;
   position: relative;
   z-index: 2;
 }
