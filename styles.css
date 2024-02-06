@@ -1037,24 +1037,38 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .flipcard1,
 .flipcard2,
 .flipcard3,
-.flipcard4 {
+.flipcard4,
+.flipcard5 {
 	width: 350px;
 	height: 350px;
 	margin: 20px;
 	overflow: hidden;
 	margin-bottom: 50px;
 	position: relative;
+	flex: center;
+}
+
+.flipcard4,
+.flipcard3 {
+	order: 1;
+}
+
+.flipcard5 {
+	margin: 20px auto 50px auto;
 }
 
 .flip_card1,
 .flip_card2,
 .flip_card3,
-.flip_card4 {
+.flip_card4,
+.flip_card5 {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -1065,7 +1079,8 @@ main {
 .flipcard1:hover > .flip_card1,
 .flipcard2:hover > .flip_card2,
 .flipcard3:hover > .flip_card3,
-.flipcard4:hover > .flip_card4 {
+.flipcard4:hover > .flip_card4,
+.flipcard5:hover > .flip_card5 {
 	cursor: pointer;
 	transform: rotateY(180deg);
 }
@@ -1077,7 +1092,9 @@ main {
 .flip_front3,
 .flip_back3,
 .flip_front4,
-.flip_back4 {
+.flip_back4,
+.flip_front5,
+.flip_back5 {
 	width: 100%;
 	position: absolute;
 	backface-visibility: hidden;
@@ -1090,7 +1107,8 @@ main {
 .flip_front1,
 .flip_front2,
 .flip_front3,
-.flip_front4 {
+.flip_front4,
+.flip_front5 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1117,10 +1135,10 @@ main {
 .flip_back1,
 .flip_back2,
 .flip_back3,
-.flip_back4 {
+.flip_back4,
+.flip_back5 {
 	height: 100%;
 	color: white;
-	/* background-color: #656c6d; */
 	background-color: #006daa;
 	transform: rotateY(180deg);
 	display: flex;
@@ -1139,6 +1157,7 @@ main {
 .schedule {
 	color: white;
 }
+
 
 header h1 {
 	/* color: #ffffff; */
@@ -1291,7 +1310,7 @@ div {
 	border-radius: 10px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .sponsor-heading {

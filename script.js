@@ -65,3 +65,29 @@ if (checkbox != null) {
 		dropdown.classList.toggle("active");
 	});
 }
+
+
+// Get today's date
+let today = new Date();
+
+// Get the date for February 16th of the next year
+let nextFeb16 = new Date(today.getFullYear(), 1, 16);
+
+// If today's date is after February 16th, get the date for February 16th of the next year
+if (today.getMonth() > 1 || (today.getMonth() === 1 && today.getDate() > 16)) {
+    nextFeb16.setFullYear(nextFeb16.getFullYear() + 1);
+}
+
+// Calculate the difference in time between the two dates
+let diffTime = Math.abs(nextFeb16 - today);
+
+// Calculate the difference in days
+let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+// Get the .text-wrapper and .text-wrapper-2 elements
+let textWrapper = document.querySelector('.text-wrapper');
+let textWrapper2 = document.querySelector('.text-wrapper-2');
+
+// Update the text in the .text-wrapper and .text-wrapper-2 elements
+textWrapper.textContent = diffDays;
+textWrapper2.textContent = "days left";
