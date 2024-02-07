@@ -745,7 +745,7 @@ nav .logo a:hover {
 	animation: gradientAnimation 8s linear infinite, colorAnimation 0.3s ease-out,
 		textShadowAnimation 0.3s ease-out;
 	margin-bottom: 0;
-	padding: 0;
+	padding-left: 25%;
 }
 
 @keyframes gradientAnimation {
@@ -1158,7 +1158,6 @@ main {
 	color: white;
 }
 
-
 header h1 {
 	/* color: #ffffff; */
 	padding: 20px;
@@ -1311,6 +1310,7 @@ div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	flex-direction: column;
 }
 
 .sponsor-heading {
@@ -1530,7 +1530,8 @@ footer {
 	}
 
 	.hero-title {
-		font-size: 5rem;
+		font-size: 4rem;
+		padding: 0;
 	}
 
 	.hero {
