@@ -10,8 +10,8 @@ html {
 	scroll-behavior: smooth;
 }
 
-.register-anchor{
-	text-decoration:none;
+.register-anchor {
+	text-decoration: none;
 }
 
 /* hero */
@@ -1119,11 +1119,29 @@ main {
 	justify-content: center;
 	height: 100%;
 	perspective: 100px;
-	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCoflC6Cj2wpbcKy9X-TnxXk9KTP2sCHzdfA&usqp=CAU");
 	background-size: 100% 65%;
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-color: #2d8dc4;
+}
+.flip_front1 {
+	background-image: url("./img/healthcare.jpg");
+}
+
+.flip_front2 {
+	background-image: url("./img/fintech.jpg");
+}
+
+.flip_front3 {
+	background-image: url("./img/ecommerce.jpg");
+}
+
+.flip_front4 {
+	background-image: url("./img/energy_sustainability.jpg");
+}
+
+.flip_front5 {
+	background-image: url("./img/transportation.jpg");
 }
 
 .flip_text {
