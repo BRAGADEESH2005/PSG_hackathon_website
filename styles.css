@@ -1352,8 +1352,8 @@ div {
 }
 
 .sponsor img {
-	width: 100px;
-	border-radius: 50%; /* Set a maximum width for sponsor images */
+	width: 150px;
+	height: 150px;
 }
 
 .sponsor img:hover {
@@ -1633,4 +1633,8 @@ footer {
 	.socialContainer {
 		justify-content: space-evenly;
 	}
+}
+
+.faculty-img {
+	border-radius: 50%;
 }
