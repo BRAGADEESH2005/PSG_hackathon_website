@@ -22,6 +22,40 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 
 } */
 
+   .prize-pool {
+  background: radial-gradient(circle at top left, #f9f9f9 20%, transparent 20%),
+              radial-gradient(circle at top right, #f9f9f9 20%, transparent 20%),
+              radial-gradient(circle at bottom left, #f9f9f9 20%, transparent 20%),
+              radial-gradient(circle at bottom right, #f9f9f9 20%, transparent 20%);
+  padding: 30px; /* Adjusted padding */
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px #0c0d13, 0 0 0 8px #007bff; /* Adjusted box-shadow */
+  text-align: center;
+  max-width: 200px; /* Adjusted max-width */
+  max-height: 150px; /* Adjusted max-height */
+  margin-left: 45%;
+  margin-top: 3%;
+  position: absolute;
+}
+
+
+
+    .prize-pool h2 {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .prize-pool p {
+      font-size: 30px;
+      color: #007bff;
+      margin: 0;
+      font-weight: bold;
+    }
+
+	
+
+
 .stars {
 	position: fixed;
 	top: 0;
@@ -1477,11 +1511,26 @@ footer {
 
 .register {
 	margin-left: 35%;
+	width:150px;
 	position: relative;
 	z-index: 2;
 }
 
 @media all and (max-width: 875px) {
+	 .prize-pool {
+        padding: 30px;
+		margin-left:20%;
+		margin-top:5%;
+		
+      }
+      .prize-pool h2 {
+        font-size: 20px;
+      }
+      .prize-pool p {
+        font-size: 16px;
+      }
+	  
+    
 	.image-code {
 		display: none;
 	}
