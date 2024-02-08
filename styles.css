@@ -6,9 +6,9 @@ body {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 }
-html {
+/* html {
 	scroll-behavior: smooth;
-}
+} */
 
 .register-anchor {
 	text-decoration: none;
@@ -27,11 +27,11 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
               radial-gradient(circle at top right, #f9f9f9 20%, transparent 20%),
               radial-gradient(circle at bottom left, #f9f9f9 20%, transparent 20%),
               radial-gradient(circle at bottom right, #f9f9f9 20%, transparent 20%);
-  padding: 30px; /* Adjusted padding */
+  padding: 35px; /* Adjusted padding */
   border-radius: 50%;
   box-shadow: 0 0 0 6px #0c0d13, 0 0 0 8px #007bff; /* Adjusted box-shadow */
   text-align: center;
-  max-width: 200px; /* Adjusted max-width */
+  max-width: 225px; /* Adjusted max-width */
   max-height: 150px; /* Adjusted max-height */
   margin-left: 45%;
   margin-top: 3%;
@@ -41,14 +41,14 @@ background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 
 
     .prize-pool h2 {
-      font-size: 24px;
+      font-size: 30px;
       color: #fff;
       margin-bottom: 10px;
       font-weight: bold;
     }
     .prize-pool p {
-      font-size: 30px;
-      color: #007bff;
+      font-size: 40px;
+      color: red;
       margin: 0;
       font-weight: bold;
     }
@@ -1159,23 +1159,23 @@ main {
 	background-color: #2d8dc4;
 }
 .flip_front1 {
-	background-image: url("./img/healthcare.jpg");
+	background-image: url("./img/health.png");
 }
 
 .flip_front2 {
-	background-image: url("./img/fintech.jpg");
+	background-image: url("./img/fintech.png");
 }
 
 .flip_front3 {
-	background-image: url("./img/ecommerce.jpg");
+	background-image: url("./img/ecom.png");
 }
 
 .flip_front4 {
-	background-image: url("./img/energy_sustainability.jpg");
+	background-image: url("./img/energy_sustainability.png");
 }
 
 .flip_front5 {
-	background-image: url("./img/transportation.jpg");
+	background-image: url("./img/transport.png");
 }
 
 .flip_text {
@@ -1200,6 +1200,8 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
+	justify-content: center;
 }
 
 .flip_pre {
@@ -1208,6 +1210,7 @@ main {
 	overflow: hidden;
 	margin-top: 20px;
 	padding: 20px;
+
 }
 
 .schedule {
@@ -1510,8 +1513,9 @@ footer {
 }
 
 .register {
-	margin-left: 35%;
-	width:150px;
+	margin-left: 20%;
+	width:200px;
+	height:60px;
 	position: relative;
 	z-index: 2;
 }
@@ -1520,14 +1524,15 @@ footer {
 	 .prize-pool {
         padding: 30px;
 		margin-left:20%;
-		margin-top:5%;
+		margin-top:9%;
 		
       }
       .prize-pool h2 {
         font-size: 20px;
       }
       .prize-pool p {
-        font-size: 16px;
+        font-size: 25px;
+		
       }
 	  
     
